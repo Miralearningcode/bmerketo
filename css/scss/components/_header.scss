@@ -1,0 +1,61 @@
+header {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "logo btn"
+                             "menu menu";
+        
+        @include xl {
+            grid-template-columns: 1fr 2fr;
+            grid-template-areas: "logo menu"                      
+        }                 
+    }    
+
+    .logo {
+        grid-area: logo;
+    }
+
+    #menu {
+        grid-area: menu;
+        
+        
+        @include lg {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .menu-links {
+            .link {
+                display: block;
+
+                @include lg {
+                    display: inline-block;
+                }
+            }
+        }
+        .menu-icons {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+
+            @include lg {
+                position: static;
+            }
+
+            .link {
+
+            }
+        }
+    }
+
+    .btn-toggle {
+        grid-area: btn;
+
+        @include lg {
+            display: none;
+        }
+    }
+}
