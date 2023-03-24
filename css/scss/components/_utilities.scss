@@ -10,10 +10,11 @@ a {
     color: $color-theme-1;
 
     &:hover {
-        text-decoration: underline;
         color: $color-theme-1;
     }
  }
+
+
 
 button {
     border: 1px solid $color-dark-1;
@@ -28,5 +29,14 @@ button {
 }
 
 .btn-white {
-    
+    padding: 5px 10px;
+}
+
+.btn-theme {
+    background-color: $color-theme-1;
+    color: $color-white;
+    border: none;
+    font-family: $font-poppins;
+    padding: 5px 20px;
+
 }
