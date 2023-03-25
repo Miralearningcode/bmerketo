@@ -23,8 +23,6 @@ header {
 
     #menu {
         grid-area: menu;
-        font-family: $font-poppins;
-        
         
         @include lg {
             display: flex;

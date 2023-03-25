@@ -1,8 +1,8 @@
 html, body {
     font-size: 16px;
-    font-family: $font-roboto;
+    font-family: $font-poppins;
     font-weight: $font-weight-regular;
-    color: $color-dark-3;
+    color: $color-dark-5;
 }
 
 a {
@@ -14,13 +14,13 @@ a {
     }
  }
 
-//Generall for all buttons
+ //BUTTONS
+//General for all buttons
 button {
     border: 1px solid $color-dark-1;
     background-color: transparent;
     color: $color-dark-1;
     transition: all 0.2s;
-    font-family: $font-poppins;
     padding: 10px 30px;
 
    &:hover {
@@ -41,17 +41,7 @@ button {
     color: $color-white; 
 }
 
-.btn-shopping-cart {
-    grid-area: btn;
-    .link {
-        color: $color-dark-4;
-
-        &:hover {
-            color: $color-dark-1;
-        }
-    }
-}
-
+//CARD
 .card {
     border: none;
 
@@ -64,16 +54,14 @@ button {
         grid-template-columns: 2fr 1fr;
         grid-template-areas: "text text"
                              "price btn";
-        font-family: $font-poppins;
         padding-left: 0;
         
-    
-        
-
         .card-text {
             grid-area: text;
+            padding-top: 15px;
             font-weight: $font-weight-medium;
             font-size: 18px;
+            line-height: 0.1rem;
             color: $color-dark-1;
             
         }
@@ -83,7 +71,27 @@ button {
             font-weight: $font-weight-regular;
             font-size: 16px;
             line-height: 0.1rem;
-            
+            padding-bottom: 10px;
+            padding-top: 10px;
         }
+
+        .shopping-cart-icon {
+            grid-area: btn;
+            display: flex;
+            justify-content: end;
+            visibility: hidden;
+        
+            .link {
+                color: $color-dark-5;
+        
+                &:hover {
+                    color: $color-dark-1;
+                }
+            }
+        }
+
+        &:hover .shopping-cart-icon {
+            visibility: visible; 
+          }
     }
 }
