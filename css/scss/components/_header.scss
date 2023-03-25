@@ -81,13 +81,20 @@ header {
         }
     }
 
-    .btn-toggle {
+    .toggle {
         grid-area: btn;
-        text-align: right;
+        display: flex;
+        justify-content: end;
+        padding: 0;
         
 
         @include lg {
             display: none;
+        }
+
+        .btn-white {
+            padding: 10px 15px;
+            font-size: 1.3rem;
         }
     }
 }

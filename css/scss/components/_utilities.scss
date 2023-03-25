@@ -14,13 +14,14 @@ a {
     }
  }
 
-
-
+//Generall for all buttons
 button {
     border: 1px solid $color-dark-1;
     background-color: transparent;
     color: $color-dark-1;
     transition: all 0.2s;
+    font-family: $font-poppins;
+    padding: 10px 30px;
 
    &:hover {
         background-color: $color-dark-1;
@@ -29,14 +30,37 @@ button {
 }
 
 .btn-white {
-    padding: 5px 10px;
+    background-color: $color-white;
+    color: $color-dark-2;
+    border: 1px solid $color-dark-2;
 }
 
 .btn-theme {
+    border: none; 
     background-color: $color-theme-1;
-    color: $color-white;
-    border: none;
-    font-family: $font-poppins;
-    padding: 5px 20px;
+    color: $color-white; 
+}
 
+.card {
+    border: none;
+
+    img {
+        
+    }
+
+    .card-body {
+        font-family: $font-poppins;
+
+        .card-text {
+
+        }
+
+        .price {
+
+        }
+    }
+
+    .shopping-cart-button {
+        
+    }
 }
