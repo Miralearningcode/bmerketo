@@ -41,6 +41,17 @@ button {
     color: $color-white; 
 }
 
+.btn-shopping-cart {
+    grid-area: btn;
+    .link {
+        color: $color-dark-4;
+
+        &:hover {
+            color: $color-dark-1;
+        }
+    }
+}
+
 .card {
     border: none;
 
@@ -49,18 +60,30 @@ button {
     }
 
     .card-body {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: "text text"
+                             "price btn";
         font-family: $font-poppins;
+        padding-left: 0;
+        
+    
+        
 
         .card-text {
-
+            grid-area: text;
+            font-weight: $font-weight-medium;
+            font-size: 18px;
+            color: $color-dark-1;
+            
         }
 
         .price {
-
+            grid-area: price;
+            font-weight: $font-weight-regular;
+            font-size: 16px;
+            line-height: 0.1rem;
+            
         }
-    }
-
-    .shopping-cart-button {
-        
     }
 }
