@@ -1,0 +1,40 @@
+.blog {
+
+    .container {
+        margin-top: 40px;
+        .card {
+            
+            .card-body {
+                display: block;
+                .title {
+                    font-weight: $font-weight-medium;
+                    font-size: 20px;
+                    color: $color-dark-1;
+                }
+                .text {
+                    color: $color-dark-4;
+                    font-family: $font-roboto;
+                    font-weight: $font-weight-regular;
+                    font-size: 16;
+                }
+            }
+
+            .post-comments {
+                display: flex;
+                font-weight: $font-weight-regular;
+                font-size: 12px;
+                .post {
+                    margin-right: 10px;
+                }
+
+                .comments {
+
+                }
+            }
+            
+                
+                                     
+                
+            }
+        }
+    }
