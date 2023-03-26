@@ -43,7 +43,12 @@ button {
 
 //CARD
 .card {
+    //border: none;
     border: none;
+    border-bottom: 1px solid $color-theme-3;
+    border-radius: 0;
+    margin-bottom: 30px;
+    margin-top: 10px;
 
     img {
         
@@ -63,15 +68,19 @@ button {
             font-size: 18px;
             line-height: 0.1rem;
             color: $color-dark-1;
-            
         }
 
+        .old-price 
+        {
+            text-decoration: line-through;
+            
+        }
         .price {
             grid-area: price;
             font-weight: $font-weight-regular;
             font-size: 16px;
             line-height: 0.1rem;
-            padding-bottom: 10px;
+            padding-bottom: 0px;
             padding-top: 10px;
         }
 
